@@ -2,6 +2,9 @@
 
 클래스 배열을 통해서 평균 키와 시력의 분포를 구하는 알고리즘입니다
 
+
+<h3>사람의 이름 키 시력을 저장하는 클래스</h3>
+
 ```java
 class PhysicalExamination {
     static final int VMAX = 21;
@@ -24,7 +27,7 @@ class PhysicalExamination {
 
 
 
-
+<h3>키 평균 구하는 메소드</h3>
 ```java
     static double avaHeight(PhyscData[]dat){
         double sum = 0;
@@ -35,7 +38,7 @@ class PhysicalExamination {
     }
 ```
 
-* 키 평균을 구하는 메소드 이다
+* dat 배열을 통하여 평균 키를 구힙니다.
 
 ```java
         static void distVision(PhyscData[] dat, int[] dist){
@@ -54,6 +57,7 @@ class PhysicalExamination {
     dist[(int)(dat[i].vision * 10)]++; 를 통해 배열의 인덱스를 구한다.
  
  
+ <h3>PhyscData타입 객체를 저장하는 배열 과 결과값 출력하는 코드</h3>
  
   ```java
      public static void main(String[] args) {
